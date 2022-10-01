@@ -1,48 +1,35 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "ES6",
-    "lib": [
-      "DOM",
-      "ESNext"
-    ],
-    // "allowJs": true,
-    // "checkJs": true,
-    "jsx": "react",
-    // "declaration": true,
-    "sourceMap": true,
-    "outDir": "./build",
-    "rootDir": "./src",
-    "removeComments": true,
-    "noEmit": true,
-    "isolatedModules": true,
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    // "strictPropertyInitialization": true,
-    "noImplicitThis": true,
+    "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
+    "outDir": "./build",
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+    "removeComments": true,
     "resolveJsonModule": true,
-    // "allowUmdGlobalAccess": true,
+    "rootDir": "./src",
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2020",
+    "useUnknownInCatchVariables": true
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "build",
-    "public"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "build", "public"]
 }

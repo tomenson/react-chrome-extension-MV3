@@ -1,6 +1,8 @@
+.vscode/
 build/
-build/*.js
 dist/
 node_modules/
-.snapshots/
+temp/
+tmp/
+
 *.min.js
